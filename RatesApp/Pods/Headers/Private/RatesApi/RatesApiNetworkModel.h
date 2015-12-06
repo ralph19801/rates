@@ -1,0 +1,1 @@
+../../../../../RatesNetworkApi/RatesNetworkApi/Classes/RatesApiNetworkModel.h

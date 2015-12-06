@@ -1,0 +1,474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB9F5B18450ABA9DDF7D2EBC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F77777FCC20B8B60DF60F4D /* libPods.a */; };
+		FD0407E61C13661500435E5D /* RTMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0407E51C13661500435E5D /* RTMenuViewController.m */; };
+		FD0407E91C136AB300435E5D /* RTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0407E71C136AB300435E5D /* RTAppDelegate.m */; };
+		FD0407F11C136AD400435E5D /* RTAssemblyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0407EC1C136AD400435E5D /* RTAssemblyUtils.m */; };
+		FD0407F21C136AD400435E5D /* RTDefaultAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0407EE1C136AD400435E5D /* RTDefaultAssembly.m */; };
+		FD0407F31C136AD400435E5D /* RTFormattersAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0407F01C136AD400435E5D /* RTFormattersAssembly.m */; };
+		FD305C0F1C12F22000C77EA8 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0B1C12F22000C77EA8 /* Lato-Black.ttf */; };
+		FD305C101C12F22000C77EA8 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0C1C12F22000C77EA8 /* Lato-Bold.ttf */; };
+		FD305C111C12F22000C77EA8 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0D1C12F22000C77EA8 /* Lato-MediumItalic.ttf */; };
+		FD305C121C12F22000C77EA8 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0E1C12F22000C77EA8 /* Lato-Regular.ttf */; };
+		FD305C191C12F27600C77EA8 /* RTRatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD305C171C12F27600C77EA8 /* RTRatesViewController.m */; };
+		FDE41DE71C0CCE6F00A1127C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE41DE61C0CCE6F00A1127C /* main.m */; };
+		FDE41DF01C0CCE6F00A1127C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE41DEE1C0CCE6F00A1127C /* Main.storyboard */; };
+		FDE41DF21C0CCE6F00A1127C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE41DF11C0CCE6F00A1127C /* Assets.xcassets */; };
+		FDE41DF51C0CCE6F00A1127C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE41DF31C0CCE6F00A1127C /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6F77777FCC20B8B60DF60F4D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD94CE009E222C3F12F20A00 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FAFED9D1FA0A7A4FED2B5DF4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FD0407E41C13661500435E5D /* RTMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTMenuViewController.h; sourceTree = "<group>"; };
+		FD0407E51C13661500435E5D /* RTMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTMenuViewController.m; sourceTree = "<group>"; };
+		FD0407E71C136AB300435E5D /* RTAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTAppDelegate.m; sourceTree = "<group>"; };
+		FD0407E81C136AB300435E5D /* RTAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTAppDelegate.h; sourceTree = "<group>"; };
+		FD0407EB1C136AD400435E5D /* RTAssemblyUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTAssemblyUtils.h; sourceTree = "<group>"; };
+		FD0407EC1C136AD400435E5D /* RTAssemblyUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTAssemblyUtils.m; sourceTree = "<group>"; };
+		FD0407ED1C136AD400435E5D /* RTDefaultAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTDefaultAssembly.h; sourceTree = "<group>"; };
+		FD0407EE1C136AD400435E5D /* RTDefaultAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTDefaultAssembly.m; sourceTree = "<group>"; };
+		FD0407EF1C136AD400435E5D /* RTFormattersAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTFormattersAssembly.h; sourceTree = "<group>"; };
+		FD0407F01C136AD400435E5D /* RTFormattersAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTFormattersAssembly.m; sourceTree = "<group>"; };
+		FD0407F41C136C7F00435E5D /* Rates-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Rates-Prefix.pch"; sourceTree = "<group>"; };
+		FD0407F51C136D6400435E5D /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		FD305C0B1C12F22000C77EA8 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		FD305C0C1C12F22000C77EA8 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		FD305C0D1C12F22000C77EA8 /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
+		FD305C0E1C12F22000C77EA8 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		FD305C161C12F27600C77EA8 /* RTRatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTRatesViewController.h; sourceTree = "<group>"; };
+		FD305C171C12F27600C77EA8 /* RTRatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTRatesViewController.m; sourceTree = "<group>"; };
+		FDE41DE21C0CCE6F00A1127C /* Rates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rates.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE41DE61C0CCE6F00A1127C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDE41DEF1C0CCE6F00A1127C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDE41DF11C0CCE6F00A1127C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDE41DF41C0CCE6F00A1127C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDE41DF61C0CCE6F00A1127C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDE41DDF1C0CCE6F00A1127C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9F5B18450ABA9DDF7D2EBC /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1213A6E9355281F86934F125 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD94CE009E222C3F12F20A00 /* Pods.debug.xcconfig */,
+				FAFED9D1FA0A7A4FED2B5DF4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		912100910DBF3CFB8F2AB498 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F77777FCC20B8B60DF60F4D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD0407EA1C136AD400435E5D /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				FD0407EB1C136AD400435E5D /* RTAssemblyUtils.h */,
+				FD0407EC1C136AD400435E5D /* RTAssemblyUtils.m */,
+				FD0407ED1C136AD400435E5D /* RTDefaultAssembly.h */,
+				FD0407EE1C136AD400435E5D /* RTDefaultAssembly.m */,
+				FD0407EF1C136AD400435E5D /* RTFormattersAssembly.h */,
+				FD0407F01C136AD400435E5D /* RTFormattersAssembly.m */,
+			);
+			path = Assemblies;
+			sourceTree = "<group>";
+		};
+		FD0408471C14029D00435E5D /* VM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		FD305C091C12F22000C77EA8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD305C0A1C12F22000C77EA8 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD305C0A1C12F22000C77EA8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FD305C0B1C12F22000C77EA8 /* Lato-Black.ttf */,
+				FD305C0C1C12F22000C77EA8 /* Lato-Bold.ttf */,
+				FD305C0D1C12F22000C77EA8 /* Lato-MediumItalic.ttf */,
+				FD305C0E1C12F22000C77EA8 /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FD305C131C12F27600C77EA8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FD305C161C12F27600C77EA8 /* RTRatesViewController.h */,
+				FD305C171C12F27600C77EA8 /* RTRatesViewController.m */,
+				FD0407E41C13661500435E5D /* RTMenuViewController.h */,
+				FD0407E51C13661500435E5D /* RTMenuViewController.m */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FDE41DD91C0CCE6F00A1127C = {
+			isa = PBXGroup;
+			children = (
+				FDE41DE41C0CCE6F00A1127C /* Rates */,
+				FDE41DE31C0CCE6F00A1127C /* Products */,
+				1213A6E9355281F86934F125 /* Pods */,
+				912100910DBF3CFB8F2AB498 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FDE41DE31C0CCE6F00A1127C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDE41DE21C0CCE6F00A1127C /* Rates.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDE41DE41C0CCE6F00A1127C /* Rates */ = {
+			isa = PBXGroup;
+			children = (
+				FD0407EA1C136AD400435E5D /* Assemblies */,
+				FD305C091C12F22000C77EA8 /* Resources */,
+				FD305C131C12F27600C77EA8 /* UI */,
+				FD0408471C14029D00435E5D /* VM */,
+				FD0407E81C136AB300435E5D /* RTAppDelegate.h */,
+				FD0407E71C136AB300435E5D /* RTAppDelegate.m */,
+				FDE41DEE1C0CCE6F00A1127C /* Main.storyboard */,
+				FDE41DF11C0CCE6F00A1127C /* Assets.xcassets */,
+				FDE41DF31C0CCE6F00A1127C /* LaunchScreen.storyboard */,
+				FDE41DF61C0CCE6F00A1127C /* Info.plist */,
+				FDE41DE51C0CCE6F00A1127C /* Supporting Files */,
+			);
+			path = Rates;
+			sourceTree = "<group>";
+		};
+		FDE41DE51C0CCE6F00A1127C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD0407F51C136D6400435E5D /* config.h */,
+				FD0407F41C136C7F00435E5D /* Rates-Prefix.pch */,
+				FDE41DE61C0CCE6F00A1127C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDE41DE11C0CCE6F00A1127C /* Rates */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDE41DF91C0CCE6F00A1127C /* Build configuration list for PBXNativeTarget "Rates" */;
+			buildPhases = (
+				C0F448D58141AA578E7DFFFC /* Check Pods Manifest.lock */,
+				FDE41DDE1C0CCE6F00A1127C /* Sources */,
+				FDE41DDF1C0CCE6F00A1127C /* Frameworks */,
+				FDE41DE01C0CCE6F00A1127C /* Resources */,
+				D777C73F30B30C516BD3D648 /* Embed Pods Frameworks */,
+				7EF2F0F7180E3D91A67FA2FD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rates;
+			productName = Rates;
+			productReference = FDE41DE21C0CCE6F00A1127C /* Rates.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDE41DDA1C0CCE6F00A1127C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RT;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = RG;
+				TargetAttributes = {
+					FDE41DE11C0CCE6F00A1127C = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = FDE41DDD1C0CCE6F00A1127C /* Build configuration list for PBXProject "Rates" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDE41DD91C0CCE6F00A1127C;
+			productRefGroup = FDE41DE31C0CCE6F00A1127C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDE41DE11C0CCE6F00A1127C /* Rates */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDE41DE01C0CCE6F00A1127C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD305C0F1C12F22000C77EA8 /* Lato-Black.ttf in Resources */,
+				FD305C101C12F22000C77EA8 /* Lato-Bold.ttf in Resources */,
+				FDE41DF51C0CCE6F00A1127C /* LaunchScreen.storyboard in Resources */,
+				FD305C111C12F22000C77EA8 /* Lato-MediumItalic.ttf in Resources */,
+				FD305C121C12F22000C77EA8 /* Lato-Regular.ttf in Resources */,
+				FDE41DF21C0CCE6F00A1127C /* Assets.xcassets in Resources */,
+				FDE41DF01C0CCE6F00A1127C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7EF2F0F7180E3D91A67FA2FD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0F448D58141AA578E7DFFFC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D777C73F30B30C516BD3D648 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDE41DDE1C0CCE6F00A1127C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0407E91C136AB300435E5D /* RTAppDelegate.m in Sources */,
+				FDE41DE71C0CCE6F00A1127C /* main.m in Sources */,
+				FD0407F11C136AD400435E5D /* RTAssemblyUtils.m in Sources */,
+				FD0407F31C136AD400435E5D /* RTFormattersAssembly.m in Sources */,
+				FD305C191C12F27600C77EA8 /* RTRatesViewController.m in Sources */,
+				FD0407E61C13661500435E5D /* RTMenuViewController.m in Sources */,
+				FD0407F21C136AD400435E5D /* RTDefaultAssembly.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FDE41DEE1C0CCE6F00A1127C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDE41DEF1C0CCE6F00A1127C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDE41DF31C0CCE6F00A1127C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDE41DF41C0CCE6F00A1127C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDE41DF71C0CCE6F00A1127C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "./Rates/Rates-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FDE41DF81C0CCE6F00A1127C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "./Rates/Rates-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDE41DFA1C0CCE6F00A1127C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD94CE009E222C3F12F20A00 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Rates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RG.Rates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FDE41DFB1C0CCE6F00A1127C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAFED9D1FA0A7A4FED2B5DF4 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Rates/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = RG.Rates;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDE41DDD1C0CCE6F00A1127C /* Build configuration list for PBXProject "Rates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDE41DF71C0CCE6F00A1127C /* Debug */,
+				FDE41DF81C0CCE6F00A1127C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDE41DF91C0CCE6F00A1127C /* Build configuration list for PBXNativeTarget "Rates" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDE41DFA1C0CCE6F00A1127C /* Debug */,
+				FDE41DFB1C0CCE6F00A1127C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDE41DDA1C0CCE6F00A1127C /* Project object */;
+}

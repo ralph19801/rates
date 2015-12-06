@@ -1,0 +1,56 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_8_0
+#warning "This project uses features only available in iOS SDK 8.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CocoaLumberjack/DDLog.h>
+    #import <AFNetworkActivityLogger.h>
+
+    #import "config.h"
+
+    #define SYSTEM_VERSION_LESS_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+
+#ifdef WANT_LOGS 
+    #define APP_LOG_LEVEL LOG_LEVEL_VERBOSE
+#else
+    #ifndef RELEASE
+        #define APP_LOG_LEVEL LOG_LEVEL_VERBOSE
+    #else
+        #define APP_LOG_LEVEL LOG_LEVEL_OFF
+    #endif
+#endif
+
+#ifdef WANT_NETWORK_LOGS
+    #define NETWORK_LOG_LEVEL AFLoggerLevelDebug
+#else
+    #ifndef RELEASE
+        #ifdef WANT_NETWORK_LOGS_NO
+            #define NETWORK_LOG_LEVEL AFLoggerLevelOff
+        #else
+            #define NETWORK_LOG_LEVEL AFLoggerLevelInfo
+        #endif
+    #else
+        #define NETWORK_LOG_LEVEL AFLoggerLevelOff
+    #endif
+#endif
+
+    static const int ddLogLevel = APP_LOG_LEVEL;
+    static const int networkLogLevel = NETWORK_LOG_LEVEL;
+
+    #import "Typhoon.h"
+
+    #define Factory      [TyphoonComponentFactory defaultFactory]
+    #define RatesApi     ((RatesApiNetworkModel *)[Factory componentForKey:@"ratesApiNetworkModel"])
+
+    #import "AFNetworking.h"
+#endif

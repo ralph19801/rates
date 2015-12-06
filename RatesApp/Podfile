@@ -1,0 +1,15 @@
+xcodeproj 'Rates.xcodeproj'
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+# local
+pod 'RatesApi', :path => '../RatesNetworkApi'
+
+# not local
+pod 'Mantle', '~> 2.0.0'
+pod 'ReactiveCocoa', '~> 2.4.7'
+pod 'Typhoon', '~> 3.1.9'
+pod 'CocoaLumberjack', '~> 1.9'
+
+pod 'AFNetworking', '~> 2.5.3'
+pod 'AFNetworkActivityLogger', '~> 2.0.4'

@@ -1,0 +1,1 @@
+../../../../../RatesNetworkApi/RatesNetworkApi/Classes/NSError+Rates.h

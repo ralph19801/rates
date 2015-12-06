@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </mutableArray>
+        <mutableArray key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </mutableArray>
+        <mutableArray key="Lato-MediumItalic.ttf">
+            <string>Lato-MediumItalic</string>
+        </mutableArray>
+        <mutableArray key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Rates View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="currentContext" id="BYZ-38-t0r" customClass="RTRatesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="51,705" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHk-oH-CTW">
+                                <rect key="frame" x="20" y="111" width="280" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="vdK-NK-Ilc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="80"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.27843137254901962" blue="0.32549019607843138" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD → RUB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eua-BY-WbK">
+                                <rect key="frame" x="20" y="89" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XRo-Ay-oHU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.27843137254901962" blue="0.32549019607843138" alpha="0.70000000000000007" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ОБНОВЛЕНО В 18:67" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ef-Cg-c5y">
+                                <rect key="frame" x="20" y="527" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hhy-wP-MZI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="11"/>
+                                <color key="textColor" red="0.24705882352941178" green="0.27843137254901962" blue="0.32549019607843138" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Maw-YD-iy7">
+                                <rect key="frame" x="20" y="515" width="75" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="SpS-c1-am1"/>
+                                    <constraint firstAttribute="height" constant="45" id="mZF-Gf-Rui"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="menuButton"/>
+                                <connections>
+                                    <segue destination="nm9-3r-yWH" kind="modal" modalPresentationStyle="currentContext" modalTransitionStyle="coverVertical" id="HEM-CY-ftO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Со вчерашнего дня доллар вырос на 1 процент" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3f-id-D8x">
+                                <rect key="frame" x="44" y="211" width="232" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232" id="NBD-kt-IHt"/>
+                                    <constraint firstAttribute="height" constant="52" id="zXa-KM-OfR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-MediumItalic" family="Lato" pointSize="17"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.82745098039215681" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EHk-oH-CTW" secondAttribute="trailing" constant="20" id="5BU-e1-2z2"/>
+                            <constraint firstItem="EHk-oH-CTW" firstAttribute="baseline" secondItem="eua-BY-WbK" secondAttribute="baseline" constant="80" id="AFz-fW-hDa"/>
+                            <constraint firstItem="v3f-id-D8x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GaX-ct-vCu"/>
+                            <constraint firstItem="eua-BY-WbK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="69" id="MHn-Z9-EHh"/>
+                            <constraint firstAttribute="trailing" secondItem="eua-BY-WbK" secondAttribute="trailing" constant="20" id="etV-np-64a"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Maw-YD-iy7" secondAttribute="bottom" constant="8" id="fM5-3a-7FO"/>
+                            <constraint firstItem="2Ef-Cg-c5y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="nBf-2b-fjI"/>
+                            <constraint firstItem="v3f-id-D8x" firstAttribute="firstBaseline" secondItem="EHk-oH-CTW" secondAttribute="baseline" constant="42" id="na5-pj-i2m"/>
+                            <constraint firstItem="EHk-oH-CTW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="oDv-0x-DfT"/>
+                            <constraint firstItem="Maw-YD-iy7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="oXp-wo-90f"/>
+                            <constraint firstAttribute="trailing" secondItem="2Ef-Cg-c5y" secondAttribute="trailing" constant="20" id="pLd-Ej-arC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Ef-Cg-c5y" secondAttribute="bottom" constant="20" id="u4d-0A-b69"/>
+                            <constraint firstItem="eua-BY-WbK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="vJ4-Yj-t94"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="331"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="r79-MD-60e">
+            <objects>
+                <viewController modalPresentationStyle="currentContext" id="nm9-3r-yWH" customClass="RTMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wnl-8U-IPw"/>
+                        <viewControllerLayoutGuide type="bottom" id="6BX-dN-nuy"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="RB8-FD-g7y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzs-or-C1J">
+                                <rect key="frame" x="20" y="407" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.4941176471" green="0.82745098039999998" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onCurrencySelected:" destination="nm9-3r-yWH" eventType="touchUpInside" id="P4C-tf-Rg3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L7M-S9-2rn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="331"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menuButton" width="21" height="13"/>
+    </resources>
+</document>

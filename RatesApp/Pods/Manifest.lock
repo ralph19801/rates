@@ -1,0 +1,70 @@
+PODS:
+  - AFNetworkActivityLogger (2.0.4):
+    - AFNetworking/NSURLConnection (~> 2.0)
+    - AFNetworking/NSURLSession (~> 2.0)
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - Mantle (2.0.6):
+    - Mantle/extobjc (= 2.0.6)
+  - Mantle/extobjc (2.0.6)
+  - RatesApi (1.0.0):
+    - AFNetworking (~> 2.5.3)
+    - ReactiveCocoa (~> 2.4.7)
+  - ReactiveCocoa (2.4.7):
+    - ReactiveCocoa/UI (= 2.4.7)
+  - ReactiveCocoa/Core (2.4.7):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.4.7)
+  - ReactiveCocoa/UI (2.4.7):
+    - ReactiveCocoa/Core
+  - Typhoon (3.1.9):
+    - Typhoon/no-arc (= 3.1.9)
+  - Typhoon/no-arc (3.1.9)
+
+DEPENDENCIES:
+  - AFNetworkActivityLogger (~> 2.0.4)
+  - AFNetworking (~> 2.5.3)
+  - CocoaLumberjack (~> 1.9)
+  - Mantle (~> 2.0.0)
+  - RatesApi (from `../RatesNetworkApi`)
+  - ReactiveCocoa (~> 2.4.7)
+  - Typhoon (~> 3.1.9)
+
+EXTERNAL SOURCES:
+  RatesApi:
+    :path: ../RatesNetworkApi
+
+SPEC CHECKSUMS:
+  AFNetworkActivityLogger: 121486778117d53b3ab1c61d264b88081d0c3eee
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
+  Mantle: 299966b00759634931699f69cb6a30b9239b944d
+  RatesApi: 74632c08930bd53d7c21c7fc4da7e76745408fac
+  ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
+  Typhoon: b48a0ba0023f7ebc92d8693f79d4985dc0f94d13
+
+COCOAPODS: 0.39.0

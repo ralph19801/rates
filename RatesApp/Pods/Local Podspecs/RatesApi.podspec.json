@@ -1,0 +1,28 @@
+{
+  "name": "RatesApi",
+  "version": "1.0.0",
+  "summary": "Rates API",
+  "license": {
+    "type": "proprietary",
+    "file": "LICENSE.txt"
+  },
+  "authors": {
+    "Ravil Garafutdinov": "garafutdinov@gmail.com"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": [
+    "RatesNetworkApi/Classes/*.{h,m}",
+    "RatesNetworkApi/Objects/*.{h,m}"
+  ],
+  "requires_arc": true,
+  "dependencies": {
+    "ReactiveCocoa": [
+      "~> 2.4.7"
+    ],
+    "AFNetworking": [
+      "~> 2.5.3"
+    ]
+  }
+}
