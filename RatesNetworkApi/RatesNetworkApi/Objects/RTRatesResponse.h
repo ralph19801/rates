@@ -14,4 +14,7 @@
 @property (nonatomic, readonly) NSString *date;
 @property (nonatomic, readonly) NSDictionary *rates;
 
+@property (nonatomic, readonly) NSString *symbol;
+@property (nonatomic, assign) double rate;
+
 @end

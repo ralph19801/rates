@@ -13,7 +13,6 @@
 @interface RTMenuViewController ()
 
 @property (nonatomic, strong) NSArray *combinations;
-@property (nonatomic, strong) id<RTFormatterProtocol> currencyFormatter;
 
 @end
 
@@ -29,8 +28,6 @@
                           [RACTuple tupleWithObjectsFromArray:@[@(RTC_EUR), @(RTC_USD)]],
                           [RACTuple tupleWithObjectsFromArray:@[@(RTC_RUB), @(RTC_USD)]],
                           [RACTuple tupleWithObjectsFromArray:@[@(RTC_RUB), @(RTC_EUR)]]];
-    
-    self.currencyFormatter = CurrencyPairFormatter;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -43,9 +40,10 @@
     RTMenuTVCell *cell = [tableView dequeueReusableCellWithIdentifier:@"menuCell"];
     
     RACTuple *values = self.combinations[indexPath.row];
-    cell.titleString = [self.currencyFormatter format:values];
+    cell.titleString = [CurrencyPairFormatter format:values];
     
-    if ([values.first isEqualToNumber:self.selectedPair.first]
+    if (self.selectedPair
+        && [values.first isEqualToNumber:self.selectedPair.first]
         && [values.second isEqualToNumber:self.selectedPair.second])
     {
         cell.isBold = YES;
@@ -63,7 +61,8 @@
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
     
     self.selectedPair = self.combinations[indexPath.row];
-    self.onCurrencyPairSelected(self.selectedPair);
+    [self.tableView reloadData];
+    SAFE_RUN(self.onCurrencyPairSelected, self.selectedPair);
 }
 
 @end

@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  Rates
+
+  Created by Garafutdinov Ravil on 06.12.15.
+  Copyright © 2015 RG. All rights reserved.
+*/
+
+"USD" = "доллар";
+"EUR" = "евро";
+"RUB" = "рубль";
+
+"n_a" = "N/A";
+
+"PersentRisesStringFormat" = "Со вчерашнего дня %@ вырос на %i процент";
+"PersentFallsStringFormat" = "Со вчерашнего дня %@ упал на %i процент";
+"PersentNotChangedStringFormat" = "Со вчерашнего дня %@ не изменился";

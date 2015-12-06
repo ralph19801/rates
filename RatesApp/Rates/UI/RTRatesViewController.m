@@ -10,6 +10,7 @@
 #import <RatesApiNetworkModel.h>
 #import <RTCurrencyFormatter.h>
 #import "RTFormatterProtocol.h"
+#import "UIColor+Rates.h"
 
 #import "RTMenuViewController.h"
 #import "RTRatesViewModel.h"
@@ -37,9 +38,63 @@
 {
     [super viewDidLoad];
     
-    self.viewModel = [[RTRatesViewModel alloc] init];
-    self.viewModel.selectedPair = [RACTuple tupleWithObjectsFromArray:@[@(RTC_USD), @(RTC_RUB)]];
-    self.menuViewController.selectedPair = self.viewModel.selectedPair;
+    self.viewModel = [[RTRatesViewModel alloc] initWithNetworkModel:RatesApi];
+    
+    [self setupSubscriptions];
+    
+    RACTuple *firstRates = [RACTuple tupleWithObjectsFromArray:@[@(RTC_USD), @(RTC_RUB)]];
+    [self requestRatesForPair:firstRates];
+}
+
+- (void)setupSubscriptions
+{
+    @weakify(self);
+    [RACObserve(self.viewModel, selectedPair) subscribeNext:^(id x)
+    {
+        @strongify(self);
+        
+        if (x)
+        {
+            self.currenciesLabel.text = [CurrencyPairFormatter format:x];
+            self.menuViewController.selectedPair = x;
+        }
+        else
+        {
+            self.currenciesLabel.text = NSLocalizedString(@"n_a", @"N/A");
+        }
+    }];
+    
+    [RACObserve(self.viewModel, rate) subscribeNext:^(id x)
+    {
+        @strongify(self);
+        
+        self.rateLabel.text = [RateFormatter format:x];
+    }];
+    
+    [RACObserve(self.viewModel, percent) subscribeNext:^(id x)
+    {
+        @strongify(self);
+        
+        self.riseLabel.text = [PercentFormatter format:[RACTuple tupleWithObjects:self.viewModel.selectedPair.second, x, nil]];
+        self.riseLabel.textColor = ([x integerValue] >= 0) ? [UIColor soaringRatesColor] : [UIColor fallingRatesColor];
+    }];
+}
+
+- (void)requestRatesForPair:(RACTuple *)pair
+{
+    [[self.viewModel requestRatesForPair:pair]
+     subscribeNext:^(id x)
+    {
+        NSLog(@"next: %@", x);
+    }
+     error:^(NSError *error)
+    {
+        NSLog(@"error: %@", error);
+    }
+     completed:^
+    {
+        NSLog(@"completed");
+    }];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -52,10 +107,8 @@
         self.menuViewController.onCurrencyPairSelected = ^(RACTuple *values)
         {
             @strongify(self);
-            self.currenciesLabel.text = [CurrencyPairFormatter format:values];
-            self.viewModel.selectedPair = values;
-            [self.menuViewController.tableView reloadData];
-            [self closeMenu:self];
+            [self closeMenu];
+            [self requestRatesForPair:values];
         };
     }
 }
@@ -74,7 +127,7 @@
     }
 }
 
-- (IBAction)closeMenu:(id)sender
+- (void)closeMenu
 {
     if (self.containerBottomConstraint.constant == 0)
     {

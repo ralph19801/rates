@@ -16,11 +16,16 @@
 		FD04084A1C14171C00435E5D /* RTRatesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0408491C14171C00435E5D /* RTRatesViewModel.m */; };
 		FD04084E1C14364900435E5D /* RTCurrencyPairFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD04084D1C14364900435E5D /* RTCurrencyPairFormatter.m */; };
 		FD0408521C143EA200435E5D /* RTMenuTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0408511C143EA200435E5D /* RTMenuTVCell.m */; };
+		FD0408561C149D0400435E5D /* UIColor+Rates.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0408551C149D0400435E5D /* UIColor+Rates.m */; };
+		FD0408591C149D7F00435E5D /* UIFont+Rates.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0408581C149D7F00435E5D /* UIFont+Rates.m */; };
 		FD305C0F1C12F22000C77EA8 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0B1C12F22000C77EA8 /* Lato-Black.ttf */; };
 		FD305C101C12F22000C77EA8 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0C1C12F22000C77EA8 /* Lato-Bold.ttf */; };
 		FD305C111C12F22000C77EA8 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0D1C12F22000C77EA8 /* Lato-MediumItalic.ttf */; };
 		FD305C121C12F22000C77EA8 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0E1C12F22000C77EA8 /* Lato-Regular.ttf */; };
 		FD305C191C12F27600C77EA8 /* RTRatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD305C171C12F27600C77EA8 /* RTRatesViewController.m */; };
+		FDA0214E1C14BA0C008BEA2F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDA021501C14BA0C008BEA2F /* Localizable.strings */; };
+		FDA021561C14BDC1008BEA2F /* RTPercentFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA021551C14BDC1008BEA2F /* RTPercentFormatter.m */; };
+		FDA021591C14C218008BEA2F /* RTRateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA021581C14C218008BEA2F /* RTRateFormatter.m */; };
 		FDE41DE71C0CCE6F00A1127C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE41DE61C0CCE6F00A1127C /* main.m */; };
 		FDE41DF01C0CCE6F00A1127C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE41DEE1C0CCE6F00A1127C /* Main.storyboard */; };
 		FDE41DF21C0CCE6F00A1127C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE41DF11C0CCE6F00A1127C /* Assets.xcassets */; };
@@ -50,12 +55,24 @@
 		FD04084F1C14365E00435E5D /* RTFormatterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTFormatterProtocol.h; sourceTree = "<group>"; };
 		FD0408501C143EA200435E5D /* RTMenuTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTMenuTVCell.h; path = ../../../../Rates/RatesApp/Rates/UI/RTMenuTVCell.h; sourceTree = "<group>"; };
 		FD0408511C143EA200435E5D /* RTMenuTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTMenuTVCell.m; path = ../../../../Rates/RatesApp/Rates/UI/RTMenuTVCell.m; sourceTree = "<group>"; };
+		FD0408541C149D0400435E5D /* UIColor+Rates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Rates.h"; sourceTree = "<group>"; };
+		FD0408551C149D0400435E5D /* UIColor+Rates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Rates.m"; sourceTree = "<group>"; };
+		FD0408571C149D7F00435E5D /* UIFont+Rates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Rates.h"; sourceTree = "<group>"; };
+		FD0408581C149D7F00435E5D /* UIFont+Rates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Rates.m"; sourceTree = "<group>"; };
+		FD04085A1C14A39000435E5D /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Macros.h; path = ../../../Rates/RatesApp/Rates/Macros.h; sourceTree = "<group>"; };
 		FD305C0B1C12F22000C77EA8 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		FD305C0C1C12F22000C77EA8 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		FD305C0D1C12F22000C77EA8 /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
 		FD305C0E1C12F22000C77EA8 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		FD305C161C12F27600C77EA8 /* RTRatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTRatesViewController.h; sourceTree = "<group>"; };
 		FD305C171C12F27600C77EA8 /* RTRatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTRatesViewController.m; sourceTree = "<group>"; };
+		FDA0214D1C14B9EF008BEA2F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FDA021521C14BA20008BEA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FDA021531C14BA2E008BEA2F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FDA021541C14BDC1008BEA2F /* RTPercentFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPercentFormatter.h; sourceTree = "<group>"; };
+		FDA021551C14BDC1008BEA2F /* RTPercentFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPercentFormatter.m; sourceTree = "<group>"; };
+		FDA021571C14C218008BEA2F /* RTRateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTRateFormatter.h; sourceTree = "<group>"; };
+		FDA021581C14C218008BEA2F /* RTRateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTRateFormatter.m; sourceTree = "<group>"; };
 		FDE41DE21C0CCE6F00A1127C /* Rates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE41DE61C0CCE6F00A1127C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDE41DEF1C0CCE6F00A1127C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,9 +138,25 @@
 				FD04084F1C14365E00435E5D /* RTFormatterProtocol.h */,
 				FD04084C1C14364900435E5D /* RTCurrencyPairFormatter.h */,
 				FD04084D1C14364900435E5D /* RTCurrencyPairFormatter.m */,
+				FDA021541C14BDC1008BEA2F /* RTPercentFormatter.h */,
+				FDA021551C14BDC1008BEA2F /* RTPercentFormatter.m */,
+				FDA021571C14C218008BEA2F /* RTRateFormatter.h */,
+				FDA021581C14C218008BEA2F /* RTRateFormatter.m */,
 			);
 			name = Formatters;
 			path = ../../../Rates/RatesApp/Rates/Formatters;
+			sourceTree = "<group>";
+		};
+		FD0408531C149CE800435E5D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FD0408541C149D0400435E5D /* UIColor+Rates.h */,
+				FD0408551C149D0400435E5D /* UIColor+Rates.m */,
+				FD0408571C149D7F00435E5D /* UIFont+Rates.h */,
+				FD0408581C149D7F00435E5D /* UIFont+Rates.m */,
+			);
+			name = Categories;
+			path = ../../../Rates/RatesApp/Rates/Categories;
 			sourceTree = "<group>";
 		};
 		FD305C091C12F22000C77EA8 /* Resources */ = {
@@ -180,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				FD0407EA1C136AD400435E5D /* Assemblies */,
+				FD0408531C149CE800435E5D /* Categories */,
 				FD04084B1C14350F00435E5D /* Formatters */,
 				FD305C091C12F22000C77EA8 /* Resources */,
 				FD305C131C12F27600C77EA8 /* UI */,
@@ -190,6 +224,7 @@
 				FDE41DF11C0CCE6F00A1127C /* Assets.xcassets */,
 				FDE41DF31C0CCE6F00A1127C /* LaunchScreen.storyboard */,
 				FDE41DF61C0CCE6F00A1127C /* Info.plist */,
+				FDA021501C14BA0C008BEA2F /* Localizable.strings */,
 				FDE41DE51C0CCE6F00A1127C /* Supporting Files */,
 			);
 			path = Rates;
@@ -198,6 +233,7 @@
 		FDE41DE51C0CCE6F00A1127C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD04085A1C14A39000435E5D /* Macros.h */,
 				FD0407F51C136D6400435E5D /* config.h */,
 				FD0407F41C136C7F00435E5D /* Rates-Prefix.pch */,
 				FDE41DE61C0CCE6F00A1127C /* main.m */,
@@ -250,6 +286,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = FDE41DD91C0CCE6F00A1127C;
 			productRefGroup = FDE41DE31C0CCE6F00A1127C /* Products */;
@@ -271,6 +308,7 @@
 				FDE41DF51C0CCE6F00A1127C /* LaunchScreen.storyboard in Resources */,
 				FD305C111C12F22000C77EA8 /* Lato-MediumItalic.ttf in Resources */,
 				FD305C121C12F22000C77EA8 /* Lato-Regular.ttf in Resources */,
+				FDA0214E1C14BA0C008BEA2F /* Localizable.strings in Resources */,
 				FDE41DF21C0CCE6F00A1127C /* Assets.xcassets in Resources */,
 				FDE41DF01C0CCE6F00A1127C /* Main.storyboard in Resources */,
 			);
@@ -331,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD0408591C149D7F00435E5D /* UIFont+Rates.m in Sources */,
 				FD0407E91C136AB300435E5D /* RTAppDelegate.m in Sources */,
 				FDE41DE71C0CCE6F00A1127C /* main.m in Sources */,
 				FD0407F11C136AD400435E5D /* RTAssemblyUtils.m in Sources */,
@@ -338,15 +377,27 @@
 				FD305C191C12F27600C77EA8 /* RTRatesViewController.m in Sources */,
 				FD0407E61C13661500435E5D /* RTMenuViewController.m in Sources */,
 				FD0408521C143EA200435E5D /* RTMenuTVCell.m in Sources */,
+				FDA021591C14C218008BEA2F /* RTRateFormatter.m in Sources */,
+				FD0408561C149D0400435E5D /* UIColor+Rates.m in Sources */,
 				FD04084A1C14171C00435E5D /* RTRatesViewModel.m in Sources */,
 				FD0407F21C136AD400435E5D /* RTDefaultAssembly.m in Sources */,
 				FD04084E1C14364900435E5D /* RTCurrencyPairFormatter.m in Sources */,
+				FDA021561C14BDC1008BEA2F /* RTPercentFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		FDA021501C14BA0C008BEA2F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA021521C14BA20008BEA2F /* Base */,
+				FDA021531C14BA2E008BEA2F /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		FDE41DEE1C0CCE6F00A1127C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -359,6 +410,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				FDE41DF41C0CCE6F00A1127C /* Base */,
+				FDA0214D1C14B9EF008BEA2F /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

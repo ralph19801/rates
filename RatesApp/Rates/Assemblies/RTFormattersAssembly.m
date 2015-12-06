@@ -10,12 +10,24 @@
 #import "RTAssemblyUtils.h"
 
 #import "RTCurrencyPairFormatter.h"
+#import "RTPercentFormatter.h"
+#import "RTRateFormatter.h"
 
 @implementation RTFormattersAssembly
 
 - (id)currencyPairFormatter
 {
     return [RTAssemblyUtils singletonDefinitionForClass:[RTCurrencyPairFormatter class]];
+}
+
+- (id)percentFormatter
+{
+    return [RTAssemblyUtils singletonDefinitionForClass:[RTPercentFormatter class]];
+}
+
+- (id)rateFormatter
+{
+    return [RTAssemblyUtils singletonDefinitionForClass:[RTRateFormatter class]];
 }
 
 @end

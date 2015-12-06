@@ -7,6 +7,8 @@
 //
 
 #import "RTMenuTVCell.h"
+#import "UIColor+Rates.h"
+#import "UIFont+Rates.h"
 
 @interface RTMenuTVCell()
 
@@ -29,13 +31,13 @@
     
     if (_isBold)
     {
-        self.titleLabel.font = [UIFont fontWithName:@"Lato-Black" size:28];
-        self.titleLabel.textColor = [UIColor whiteColor];
+        self.titleLabel.font = [UIFont boldCellTitleFont];
+        self.titleLabel.textColor = [UIColor boldCellTitleColor];
     }
     else
     {
-        self.titleLabel.font = [UIFont fontWithName:@"Lato-Regular" size:28];
-        self.titleLabel.textColor = [UIColor colorWithWhite:1 alpha:0.7f];
+        self.titleLabel.font = [UIFont regularCellTitleFont];
+        self.titleLabel.textColor = [UIColor regularCellTitleColor];
     }
 }
 

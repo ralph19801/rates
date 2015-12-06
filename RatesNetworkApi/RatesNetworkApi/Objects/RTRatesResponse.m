@@ -19,4 +19,14 @@
              };
 }
 
+- (NSString *)symbol
+{
+    return self.rates.allKeys.firstObject;
+}
+
+- (double)rate
+{
+    return [self.rates[self.symbol] doubleValue];
+}
+
 @end
