@@ -7,14 +7,15 @@
 //
 
 #import "RTFormattersAssembly.h"
-
 #import "RTAssemblyUtils.h"
+
+#import "RTCurrencyPairFormatter.h"
 
 @implementation RTFormattersAssembly
 
-//- (id)targetStatTimeFormatter
-//{
-//    return [LCAssemblyUtils singletonDefinitionForClass:[LCTargetStatTimeFormatter class]];
-//}
+- (id)currencyPairFormatter
+{
+    return [RTAssemblyUtils singletonDefinitionForClass:[RTCurrencyPairFormatter class]];
+}
 
 @end

@@ -12,7 +12,7 @@ typedef NS_ENUM (NSInteger, RatesCurrencies)
 {
     RTC_Undefined = 0,
     RTC_USD,
-    RTC_EURO,
+    RTC_EUR,
     RTC_RUB
 };
 

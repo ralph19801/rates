@@ -13,6 +13,9 @@
 		FD0407F11C136AD400435E5D /* RTAssemblyUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0407EC1C136AD400435E5D /* RTAssemblyUtils.m */; };
 		FD0407F21C136AD400435E5D /* RTDefaultAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0407EE1C136AD400435E5D /* RTDefaultAssembly.m */; };
 		FD0407F31C136AD400435E5D /* RTFormattersAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0407F01C136AD400435E5D /* RTFormattersAssembly.m */; };
+		FD04084A1C14171C00435E5D /* RTRatesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0408491C14171C00435E5D /* RTRatesViewModel.m */; };
+		FD04084E1C14364900435E5D /* RTCurrencyPairFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD04084D1C14364900435E5D /* RTCurrencyPairFormatter.m */; };
+		FD0408521C143EA200435E5D /* RTMenuTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0408511C143EA200435E5D /* RTMenuTVCell.m */; };
 		FD305C0F1C12F22000C77EA8 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0B1C12F22000C77EA8 /* Lato-Black.ttf */; };
 		FD305C101C12F22000C77EA8 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0C1C12F22000C77EA8 /* Lato-Bold.ttf */; };
 		FD305C111C12F22000C77EA8 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0D1C12F22000C77EA8 /* Lato-MediumItalic.ttf */; };
@@ -40,6 +43,13 @@
 		FD0407F01C136AD400435E5D /* RTFormattersAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTFormattersAssembly.m; sourceTree = "<group>"; };
 		FD0407F41C136C7F00435E5D /* Rates-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Rates-Prefix.pch"; sourceTree = "<group>"; };
 		FD0407F51C136D6400435E5D /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		FD0408481C14171C00435E5D /* RTRatesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTRatesViewModel.h; path = ../../../../Rates/RatesApp/Rates/VM/RTRatesViewModel.h; sourceTree = "<group>"; };
+		FD0408491C14171C00435E5D /* RTRatesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTRatesViewModel.m; path = ../../../../Rates/RatesApp/Rates/VM/RTRatesViewModel.m; sourceTree = "<group>"; };
+		FD04084C1C14364900435E5D /* RTCurrencyPairFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTCurrencyPairFormatter.h; sourceTree = "<group>"; };
+		FD04084D1C14364900435E5D /* RTCurrencyPairFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTCurrencyPairFormatter.m; sourceTree = "<group>"; };
+		FD04084F1C14365E00435E5D /* RTFormatterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTFormatterProtocol.h; sourceTree = "<group>"; };
+		FD0408501C143EA200435E5D /* RTMenuTVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RTMenuTVCell.h; path = ../../../../Rates/RatesApp/Rates/UI/RTMenuTVCell.h; sourceTree = "<group>"; };
+		FD0408511C143EA200435E5D /* RTMenuTVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RTMenuTVCell.m; path = ../../../../Rates/RatesApp/Rates/UI/RTMenuTVCell.m; sourceTree = "<group>"; };
 		FD305C0B1C12F22000C77EA8 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
 		FD305C0C1C12F22000C77EA8 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		FD305C0D1C12F22000C77EA8 /* Lato-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -99,8 +109,21 @@
 		FD0408471C14029D00435E5D /* VM */ = {
 			isa = PBXGroup;
 			children = (
+				FD0408481C14171C00435E5D /* RTRatesViewModel.h */,
+				FD0408491C14171C00435E5D /* RTRatesViewModel.m */,
 			);
 			path = VM;
+			sourceTree = "<group>";
+		};
+		FD04084B1C14350F00435E5D /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				FD04084F1C14365E00435E5D /* RTFormatterProtocol.h */,
+				FD04084C1C14364900435E5D /* RTCurrencyPairFormatter.h */,
+				FD04084D1C14364900435E5D /* RTCurrencyPairFormatter.m */,
+			);
+			name = Formatters;
+			path = ../../../Rates/RatesApp/Rates/Formatters;
 			sourceTree = "<group>";
 		};
 		FD305C091C12F22000C77EA8 /* Resources */ = {
@@ -129,6 +152,8 @@
 				FD305C171C12F27600C77EA8 /* RTRatesViewController.m */,
 				FD0407E41C13661500435E5D /* RTMenuViewController.h */,
 				FD0407E51C13661500435E5D /* RTMenuViewController.m */,
+				FD0408501C143EA200435E5D /* RTMenuTVCell.h */,
+				FD0408511C143EA200435E5D /* RTMenuTVCell.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -155,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				FD0407EA1C136AD400435E5D /* Assemblies */,
+				FD04084B1C14350F00435E5D /* Formatters */,
 				FD305C091C12F22000C77EA8 /* Resources */,
 				FD305C131C12F27600C77EA8 /* UI */,
 				FD0408471C14029D00435E5D /* VM */,
@@ -311,7 +337,10 @@
 				FD0407F31C136AD400435E5D /* RTFormattersAssembly.m in Sources */,
 				FD305C191C12F27600C77EA8 /* RTRatesViewController.m in Sources */,
 				FD0407E61C13661500435E5D /* RTMenuViewController.m in Sources */,
+				FD0408521C143EA200435E5D /* RTMenuTVCell.m in Sources */,
+				FD04084A1C14171C00435E5D /* RTRatesViewModel.m in Sources */,
 				FD0407F21C136AD400435E5D /* RTDefaultAssembly.m in Sources */,
+				FD04084E1C14364900435E5D /* RTCurrencyPairFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

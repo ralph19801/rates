@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <RTCurrencyFormatter.h>
+#import <RACTuple.h>
 
-@interface RTMenuViewController : UIViewController
+@interface RTMenuViewController : UITableViewController
+
+@property (nonatomic, strong) RACTuple *selectedPair;
+@property (nonatomic, copy) void(^onCurrencyPairSelected)(RACTuple *values);
 
 @end

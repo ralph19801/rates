@@ -9,8 +9,25 @@
 #import "RTRatesViewController.h"
 #import <RatesApiNetworkModel.h>
 #import <RTCurrencyFormatter.h>
+#import "RTFormatterProtocol.h"
+
+#import "RTMenuViewController.h"
+#import "RTRatesViewModel.h"
+
+#define kAnimationDuration 0.5f
 
 @interface RTRatesViewController ()
+
+@property (nonatomic, weak) IBOutlet UILabel *currenciesLabel;
+@property (nonatomic, weak) IBOutlet UILabel *rateLabel;
+@property (nonatomic, weak) IBOutlet UILabel *riseLabel;
+@property (nonatomic, weak) IBOutlet UILabel *timeLabel;
+
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *containerBottomConstraint;
+@property (nonatomic, weak) IBOutlet UIView *menuContainer;
+@property (nonatomic, strong) RTMenuViewController *menuViewController;
+
+@property (nonatomic, strong) RTRatesViewModel *viewModel;
 
 @end
 
@@ -20,15 +37,60 @@
 {
     [super viewDidLoad];
     
-    self.definesPresentationContext = YES;
+    self.viewModel = [[RTRatesViewModel alloc] init];
+    self.viewModel.selectedPair = [RACTuple tupleWithObjectsFromArray:@[@(RTC_USD), @(RTC_RUB)]];
+    self.menuViewController.selectedPair = self.viewModel.selectedPair;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"RatesVCEmbedMenuTVCSegue"])
+    {
+        self.menuViewController = segue.destinationViewController;
+        
+        @weakify(self);
+        self.menuViewController.onCurrencyPairSelected = ^(RACTuple *values)
+        {
+            @strongify(self);
+            self.currenciesLabel.text = [CurrencyPairFormatter format:values];
+            self.viewModel.selectedPair = values;
+            [self.menuViewController.tableView reloadData];
+            [self closeMenu:self];
+        };
+    }
+}
+
+#pragma mark Menu
+- (IBAction)onMenuButtonTouch:(id)sender
+{
+    [self openMenu];
+}
+
+- (void)openMenu
+{
+    if (self.containerBottomConstraint.constant != 0)
+    {
+        [self animateMenuToConst:0];
+    }
+}
+
+- (IBAction)closeMenu:(id)sender
+{
+    if (self.containerBottomConstraint.constant == 0)
+    {
+        [self animateMenuToConst:-self.menuContainer.bounds.size.height];
+    }
+}
+
+- (void)animateMenuToConst:(CGFloat)constant
+{
+    self.containerBottomConstraint.constant = constant;
+    [self.view setNeedsUpdateConstraints];
     
-    [[RatesApi requestTodayRatesForBase:RTC_USD to:RTC_RUB]
-     subscribeNext:^(id x) {
-         NSLog(@"next: %@", x);
-     } error:^(NSError *error) {
-         NSLog(@"error: %@", error);
-     } completed:^{
-         NSLog(@"completed");
+    [UIView animateWithDuration:kAnimationDuration
+                     animations:^
+     {
+         [self.view layoutIfNeeded];
      }];
 }
 

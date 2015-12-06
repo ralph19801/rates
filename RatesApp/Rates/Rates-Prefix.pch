@@ -15,6 +15,7 @@
     #import <Foundation/Foundation.h>
     #import <CocoaLumberjack/DDLog.h>
     #import <AFNetworkActivityLogger.h>
+    #import "RACEXTScope.h"
 
     #import "config.h"
 
@@ -51,6 +52,7 @@
 
     #define Factory      [TyphoonComponentFactory defaultFactory]
     #define RatesApi     ((RatesApiNetworkModel *)[Factory componentForKey:@"ratesApiNetworkModel"])
+    #define CurrencyPairFormatter     ((id<RTFormatterProtocol>)[Factory componentForKey:@"currencyPairFormatter"])
 
     #import "AFNetworking.h"
 #endif

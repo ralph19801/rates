@@ -17,7 +17,7 @@
     dispatch_once(&onceToken, ^
                   {
                       currencies = @{@(RTC_USD) : @"USD",
-                                     @(RTC_EURO) : @"EURO",
+                                     @(RTC_EUR) : @"EUR",
                                      @(RTC_RUB) : @"RUB"};
                   });
     
@@ -31,7 +31,7 @@
     dispatch_once(&onceToken, ^
                   {
                       currencies = @{@"USD" : @(RTC_USD),
-                                     @"EURO" : @(RTC_EURO),
+                                     @"EUR" : @(RTC_EUR),
                                      @"RUB" : @(RTC_RUB)};
                   });
     
