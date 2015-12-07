@@ -17,7 +17,7 @@
     if ([x isKindOfClass:[RACTuple class]])
     {
         NSString *curString = [RTCurrencyFormatter stringWithCurrency:[x.first integerValue]];
-        NSString *curLocalized = NSLocalizedString(curString, "");
+        NSString *curLocalized = NSLocalizedString(curString, "euro");
         NSInteger percent = [x.second integerValue];
 
         NSString *rlt = nil;

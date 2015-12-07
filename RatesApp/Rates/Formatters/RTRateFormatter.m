@@ -14,7 +14,7 @@
 {
     if ([x isKindOfClass:[NSNumber class]])
     {
-        return [NSString stringWithFormat:@"%.3f", [x doubleValue]];
+        return [[NSString alloc] initWithFormat:@"%.3f" locale:[NSLocale currentLocale], [x doubleValue]];
     }
     
     return x;
