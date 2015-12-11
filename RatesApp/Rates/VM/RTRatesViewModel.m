@@ -20,6 +20,8 @@
 @property (nonatomic, strong, readwrite) RACTuple *selectedPair;
 @property (nonatomic, assign, readwrite) double rate;
 @property (nonatomic, assign, readwrite) NSInteger percent;
+@property (nonatomic, strong, readwrite) NSDate *time;
+
 @end
 
 @implementation RTRatesViewModel
@@ -153,6 +155,7 @@
         {
             self.rate = todayRates.rate;
             self.percent = round((todayRates.rate / yesterdayRates.rate) * 100.f - 100.f);
+            self.time = [NSDate date];
         }
     }
                       andBeforeErrorBlock:^(NSError *error)

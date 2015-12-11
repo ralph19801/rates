@@ -12,6 +12,11 @@
 
 "n_a" = "N/A";
 
-"PersentRisesStringFormat" = "Since yesterday %@ soared by %i percent";
-"PersentFallsStringFormat" = "Since yesterday %@ fell by %i percent";
+"PersentRisesStringFormat" = "Since yesterday %@ soared by %i %@";
+"PersentFallsStringFormat" = "Since yesterday %@ fell by %i %@";
 "PersentNotChangedStringFormat" = "Since yesterday %@ rate did not change";
+
+"UpdatedTimeFormat" = "UPDATED AT %@";
+
+"PercentWord" = "percent";
+

@@ -12,6 +12,12 @@
 
 "n_a" = "N/A";
 
-"PersentRisesStringFormat" = "Со вчерашнего дня %@ вырос на %i процент";
-"PersentFallsStringFormat" = "Со вчерашнего дня %@ упал на %i процент";
+"PersentRisesStringFormat" = "Со вчерашнего дня %@ вырос на %i %@";
+"PersentFallsStringFormat" = "Со вчерашнего дня %@ упал на %i %@";
 "PersentNotChangedStringFormat" = "Со вчерашнего дня %@ не изменился";
+
+"UpdatedTimeFormat" = "ОБНОВЛЕНО В %@";
+
+"PercentWord" = "процент";
+"Percent2-4" = "а";
+"Percent5-0" = "ов";

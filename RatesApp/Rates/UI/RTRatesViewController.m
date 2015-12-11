@@ -78,22 +78,21 @@
         self.riseLabel.text = [PercentFormatter format:[RACTuple tupleWithObjects:self.viewModel.selectedPair.second, x, nil]];
         self.riseLabel.textColor = ([x integerValue] >= 0) ? [UIColor soaringRatesColor] : [UIColor fallingRatesColor];
     }];
+    
+    [RACObserve(self.viewModel, time) subscribeNext:^(id x)
+    {
+        @strongify(self);
+        
+        self.timeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"UpdatedTimeFormat", @"Updated at mm:hh"), [TimeFormatter format:x]];
+    }];
 }
 
 - (void)requestRatesForPair:(RACTuple *)pair
 {
-    [[self.viewModel requestRatesForPair:pair]
-     subscribeNext:^(id x)
+    @weakify(self);
+    [[self.viewModel requestRatesForPair:pair] subscribeError:^(NSError *error)
     {
-        NSLog(@"next: %@", x);
-    }
-     error:^(NSError *error)
-    {
-        NSLog(@"error: %@", error);
-    }
-     completed:^
-    {
-        NSLog(@"completed");
+        [self_weak_ processError:error];
     }];
 }
 
@@ -111,6 +110,11 @@
             [self requestRatesForPair:values];
         };
     }
+}
+
+- (void)processError:(NSError *)error
+{
+    
 }
 
 #pragma mark Menu

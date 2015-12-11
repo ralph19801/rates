@@ -19,6 +19,7 @@
 @property (nonatomic, strong, readonly) RACTuple *selectedPair;
 @property (nonatomic, assign, readonly) double rate;
 @property (nonatomic, assign, readonly) NSInteger percent;
+@property (nonatomic, strong, readonly) NSDate *time;
 
 // input
 - (RACSignal *)requestRatesForPair:(RACTuple *)pair;

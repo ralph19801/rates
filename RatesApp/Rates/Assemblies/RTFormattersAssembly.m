@@ -12,6 +12,8 @@
 #import "RTCurrencyPairFormatter.h"
 #import "RTPercentFormatter.h"
 #import "RTRateFormatter.h"
+#import "RTTimeFormatter.h"
+#import "RTPercentSuffixFormatter.h"
 
 @implementation RTFormattersAssembly
 
@@ -28,6 +30,16 @@
 - (id)rateFormatter
 {
     return [RTAssemblyUtils singletonDefinitionForClass:[RTRateFormatter class]];
+}
+
+- (id)timeFormatter
+{
+    return [RTAssemblyUtils singletonDefinitionForClass:[RTTimeFormatter class]];
+}
+
+- (id)percentSuffixFormatter
+{
+    return [RTAssemblyUtils singletonDefinitionForClass:[RTPercentSuffixFormatter class]];
 }
 
 @end

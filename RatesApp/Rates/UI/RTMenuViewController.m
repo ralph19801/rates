@@ -62,6 +62,7 @@
     
     self.selectedPair = self.combinations[indexPath.row];
     [self.tableView reloadData];
+    
     SAFE_RUN(self.onCurrencyPairSelected, self.selectedPair);
 }
 

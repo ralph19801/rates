@@ -21,7 +21,7 @@
         return [NSString stringWithFormat:@"%@ → %@", first, second];
     }
     
-    return x;
+    return @"";
 }
 
 @end

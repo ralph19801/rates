@@ -23,6 +23,8 @@
 		FD305C111C12F22000C77EA8 /* Lato-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0D1C12F22000C77EA8 /* Lato-MediumItalic.ttf */; };
 		FD305C121C12F22000C77EA8 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD305C0E1C12F22000C77EA8 /* Lato-Regular.ttf */; };
 		FD305C191C12F27600C77EA8 /* RTRatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD305C171C12F27600C77EA8 /* RTRatesViewController.m */; };
+		FD4A8B521C1B093F003DB3F0 /* RTTimeFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4A8B511C1B093F003DB3F0 /* RTTimeFormatter.m */; };
+		FD4A8B551C1B370C003DB3F0 /* RTPercentSuffixFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4A8B541C1B370C003DB3F0 /* RTPercentSuffixFormatter.m */; };
 		FDA0214E1C14BA0C008BEA2F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDA021501C14BA0C008BEA2F /* Localizable.strings */; };
 		FDA021561C14BDC1008BEA2F /* RTPercentFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA021551C14BDC1008BEA2F /* RTPercentFormatter.m */; };
 		FDA021591C14C218008BEA2F /* RTRateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA021581C14C218008BEA2F /* RTRateFormatter.m */; };
@@ -66,6 +68,10 @@
 		FD305C0E1C12F22000C77EA8 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		FD305C161C12F27600C77EA8 /* RTRatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTRatesViewController.h; sourceTree = "<group>"; };
 		FD305C171C12F27600C77EA8 /* RTRatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTRatesViewController.m; sourceTree = "<group>"; };
+		FD4A8B501C1B093F003DB3F0 /* RTTimeFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTTimeFormatter.h; sourceTree = "<group>"; };
+		FD4A8B511C1B093F003DB3F0 /* RTTimeFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTTimeFormatter.m; sourceTree = "<group>"; };
+		FD4A8B531C1B370C003DB3F0 /* RTPercentSuffixFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPercentSuffixFormatter.h; sourceTree = "<group>"; };
+		FD4A8B541C1B370C003DB3F0 /* RTPercentSuffixFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPercentSuffixFormatter.m; sourceTree = "<group>"; };
 		FDA0214D1C14B9EF008BEA2F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		FDA021521C14BA20008BEA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FDA021531C14BA2E008BEA2F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -142,6 +148,10 @@
 				FDA021551C14BDC1008BEA2F /* RTPercentFormatter.m */,
 				FDA021571C14C218008BEA2F /* RTRateFormatter.h */,
 				FDA021581C14C218008BEA2F /* RTRateFormatter.m */,
+				FD4A8B501C1B093F003DB3F0 /* RTTimeFormatter.h */,
+				FD4A8B511C1B093F003DB3F0 /* RTTimeFormatter.m */,
+				FD4A8B531C1B370C003DB3F0 /* RTPercentSuffixFormatter.h */,
+				FD4A8B541C1B370C003DB3F0 /* RTPercentSuffixFormatter.m */,
 			);
 			name = Formatters;
 			path = ../../../Rates/RatesApp/Rates/Formatters;
@@ -374,6 +384,7 @@
 				FDE41DE71C0CCE6F00A1127C /* main.m in Sources */,
 				FD0407F11C136AD400435E5D /* RTAssemblyUtils.m in Sources */,
 				FD0407F31C136AD400435E5D /* RTFormattersAssembly.m in Sources */,
+				FD4A8B551C1B370C003DB3F0 /* RTPercentSuffixFormatter.m in Sources */,
 				FD305C191C12F27600C77EA8 /* RTRatesViewController.m in Sources */,
 				FD0407E61C13661500435E5D /* RTMenuViewController.m in Sources */,
 				FD0408521C143EA200435E5D /* RTMenuTVCell.m in Sources */,
@@ -381,6 +392,7 @@
 				FD0408561C149D0400435E5D /* UIColor+Rates.m in Sources */,
 				FD04084A1C14171C00435E5D /* RTRatesViewModel.m in Sources */,
 				FD0407F21C136AD400435E5D /* RTDefaultAssembly.m in Sources */,
+				FD4A8B521C1B093F003DB3F0 /* RTTimeFormatter.m in Sources */,
 				FD04084E1C14364900435E5D /* RTCurrencyPairFormatter.m in Sources */,
 				FDA021561C14BDC1008BEA2F /* RTPercentFormatter.m in Sources */,
 			);

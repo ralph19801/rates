@@ -14,20 +14,21 @@
 
 - (id)format:(RACTuple *)x
 {
-    if ([x isKindOfClass:[RACTuple class]])
+    if ([x isKindOfClass:[RACTuple class]] && x.count >= 2)
     {
         NSString *curString = [RTCurrencyFormatter stringWithCurrency:[x.first integerValue]];
         NSString *curLocalized = NSLocalizedString(curString, "euro");
         NSInteger percent = [x.second integerValue];
+        NSString *percentWithSuffix = [[Factory componentForKey:@"percentSuffixFormatter"] format:x.second];
 
         NSString *rlt = nil;
         if (percent > 0)
         {
-            rlt = [NSString stringWithFormat:NSLocalizedString(@"PersentRisesStringFormat", @""), curLocalized, percent];
+            rlt = [NSString stringWithFormat:NSLocalizedString(@"PersentRisesStringFormat", @""), curLocalized, percent, percentWithSuffix];
         }
         else if (percent < 0)
         {
-            rlt = [NSString stringWithFormat:NSLocalizedString(@"PersentFallsStringFormat", @""), curLocalized, -percent];
+            rlt = [NSString stringWithFormat:NSLocalizedString(@"PersentFallsStringFormat", @""), curLocalized, -percent, percentWithSuffix];
         }
         else
         {
@@ -36,7 +37,8 @@
         
         return rlt;
     }
-    return x;
+    
+    return @"";
 }
 
 @end

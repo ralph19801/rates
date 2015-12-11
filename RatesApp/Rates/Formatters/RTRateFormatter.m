@@ -17,7 +17,7 @@
         return [[NSString alloc] initWithFormat:@"%.3f" locale:[NSLocale currentLocale], [x doubleValue]];
     }
     
-    return x;
+    return @"";
 }
 
 @end
