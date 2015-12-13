@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '336E3D8CF7B6D90A84900FBF'
+               BlueprintIdentifier = 'A18DCE20DA29206FD3C91EF1'
                BlueprintName = 'RatesApi'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libRatesApi.a'>

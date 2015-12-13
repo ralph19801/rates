@@ -19,7 +19,7 @@
         if ([localization isEqualToString:@"ru"])
         {
             NSMutableString *rlt = [NSLocalizedString(@"PercentWord", @"") mutableCopy];
-            NSUInteger p = abs([num integerValue]);
+            NSUInteger p = labs([num longValue]);
             
             NSUInteger dd = p % 100;
             NSUInteger d = p % 10;

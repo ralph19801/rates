@@ -20,3 +20,5 @@
 
 "PercentWord" = "percent";
 
+"ErrorMessage" = "An error occured. Please try again later.";
+"AlertButtonOk" = "Ok";

@@ -28,6 +28,8 @@
 		FDA0214E1C14BA0C008BEA2F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDA021501C14BA0C008BEA2F /* Localizable.strings */; };
 		FDA021561C14BDC1008BEA2F /* RTPercentFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA021551C14BDC1008BEA2F /* RTPercentFormatter.m */; };
 		FDA021591C14C218008BEA2F /* RTRateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = FDA021581C14C218008BEA2F /* RTRateFormatter.m */; };
+		FDB587881C1D71BC00814CA7 /* NSString+Spacing.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB587871C1D71BC00814CA7 /* NSString+Spacing.m */; };
+		FDB5878B1C1D739600814CA7 /* NSString+Line.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB5878A1C1D739600814CA7 /* NSString+Line.m */; };
 		FDE41DE71C0CCE6F00A1127C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE41DE61C0CCE6F00A1127C /* main.m */; };
 		FDE41DF01C0CCE6F00A1127C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE41DEE1C0CCE6F00A1127C /* Main.storyboard */; };
 		FDE41DF21C0CCE6F00A1127C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDE41DF11C0CCE6F00A1127C /* Assets.xcassets */; };
@@ -79,6 +81,10 @@
 		FDA021551C14BDC1008BEA2F /* RTPercentFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPercentFormatter.m; sourceTree = "<group>"; };
 		FDA021571C14C218008BEA2F /* RTRateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTRateFormatter.h; sourceTree = "<group>"; };
 		FDA021581C14C218008BEA2F /* RTRateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTRateFormatter.m; sourceTree = "<group>"; };
+		FDB587861C1D71BC00814CA7 /* NSString+Spacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Spacing.h"; sourceTree = "<group>"; };
+		FDB587871C1D71BC00814CA7 /* NSString+Spacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Spacing.m"; sourceTree = "<group>"; };
+		FDB587891C1D739600814CA7 /* NSString+Line.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Line.h"; sourceTree = "<group>"; };
+		FDB5878A1C1D739600814CA7 /* NSString+Line.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Line.m"; sourceTree = "<group>"; };
 		FDE41DE21C0CCE6F00A1127C /* Rates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDE41DE61C0CCE6F00A1127C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FDE41DEF1C0CCE6F00A1127C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,6 +170,10 @@
 				FD0408551C149D0400435E5D /* UIColor+Rates.m */,
 				FD0408571C149D7F00435E5D /* UIFont+Rates.h */,
 				FD0408581C149D7F00435E5D /* UIFont+Rates.m */,
+				FDB587861C1D71BC00814CA7 /* NSString+Spacing.h */,
+				FDB587871C1D71BC00814CA7 /* NSString+Spacing.m */,
+				FDB587891C1D739600814CA7 /* NSString+Line.h */,
+				FDB5878A1C1D739600814CA7 /* NSString+Line.m */,
 			);
 			name = Categories;
 			path = ../../../Rates/RatesApp/Rates/Categories;
@@ -390,7 +400,9 @@
 				FD0408521C143EA200435E5D /* RTMenuTVCell.m in Sources */,
 				FDA021591C14C218008BEA2F /* RTRateFormatter.m in Sources */,
 				FD0408561C149D0400435E5D /* UIColor+Rates.m in Sources */,
+				FDB587881C1D71BC00814CA7 /* NSString+Spacing.m in Sources */,
 				FD04084A1C14171C00435E5D /* RTRatesViewModel.m in Sources */,
+				FDB5878B1C1D739600814CA7 /* NSString+Line.m in Sources */,
 				FD0407F21C136AD400435E5D /* RTDefaultAssembly.m in Sources */,
 				FD4A8B521C1B093F003DB3F0 /* RTTimeFormatter.m in Sources */,
 				FD04084E1C14364900435E5D /* RTCurrencyPairFormatter.m in Sources */,

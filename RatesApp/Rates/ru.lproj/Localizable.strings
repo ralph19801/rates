@@ -21,3 +21,6 @@
 "PercentWord" = "процент";
 "Percent2-4" = "а";
 "Percent5-0" = "ов";
+
+"ErrorMessage" = "Произошла ошибка. Попробуйте позже.";
+"AlertButtonOk" = "ОК";

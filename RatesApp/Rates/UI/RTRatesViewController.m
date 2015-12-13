@@ -8,12 +8,15 @@
 
 #import "RTRatesViewController.h"
 #import <RatesApiNetworkModel.h>
-#import <RTCurrencyFormatter.h>
-#import "RTFormatterProtocol.h"
-#import "UIColor+Rates.h"
 
 #import "RTMenuViewController.h"
 #import "RTRatesViewModel.h"
+
+#import <RTCurrencyFormatter.h>
+#import "RTFormatterProtocol.h"
+#import "UIColor+Rates.h"
+#import "NSString+Spacing.h"
+#import "NSString+Line.h"
 
 #define kAnimationDuration 0.5f
 
@@ -55,7 +58,9 @@
         
         if (x)
         {
-            self.currenciesLabel.text = [CurrencyPairFormatter format:x];
+            NSString *curString = [CurrencyPairFormatter format:x];
+            self.currenciesLabel.attributedText = [curString attributedStringWithSpacing:1];
+            
             self.menuViewController.selectedPair = x;
         }
         else
@@ -68,14 +73,17 @@
     {
         @strongify(self);
         
-        self.rateLabel.text = [RateFormatter format:x];
+        NSString *rateString = [RateFormatter format:x];
+        self.rateLabel.attributedText = [rateString attributedStringWithSpacing:-4];
     }];
     
     [RACObserve(self.viewModel, percent) subscribeNext:^(id x)
     {
         @strongify(self);
         
-        self.riseLabel.text = [PercentFormatter format:[RACTuple tupleWithObjects:self.viewModel.selectedPair.second, x, nil]];
+        NSString *riseString = [PercentFormatter format:[RACTuple tupleWithObjects:self.viewModel.selectedPair.second, x, nil]];
+        self.riseLabel.attributedText = [riseString attributedStringWithLineHeight:1.21f];
+        
         self.riseLabel.textColor = ([x integerValue] >= 0) ? [UIColor soaringRatesColor] : [UIColor fallingRatesColor];
     }];
     
@@ -83,7 +91,9 @@
     {
         @strongify(self);
         
-        self.timeLabel.text = [NSString stringWithFormat:NSLocalizedString(@"UpdatedTimeFormat", @"Updated at mm:hh"), [TimeFormatter format:x]];
+        NSString *timeString = [NSString stringWithFormat:NSLocalizedString(@"UpdatedTimeFormat", @"Updated at mm:hh"),
+                                [TimeFormatter format:x]];
+        self.timeLabel.attributedText = [timeString attributedStringWithSpacing:2];
     }];
 }
 
@@ -114,7 +124,15 @@
 
 - (void)processError:(NSError *)error
 {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@""
+                                                                   message:NSLocalizedString(@"ErrorMessage", @"error message")
+                                                            preferredStyle:UIAlertControllerStyleAlert];
     
+    [alert addAction:[UIAlertAction actionWithTitle:NSLocalizedString(@"AlertButtonOk", @"OK")
+                                              style:UIAlertActionStyleDefault
+                                            handler:nil]];
+    
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 #pragma mark Menu
